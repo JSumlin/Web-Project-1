@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card-game {
+    display: flex;
+    align-items: center;
+}
+
+.shuffle-button,
+.deal-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.deck {
+    width: 150px;
+    height: 200px;
+    background-color: #333;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    animation: shuffle 2s ease-in-out;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.players {
+    display: flex;
+}
+
+.player {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.player h2 {
+    font-size: 20px;
+}
+
+.hand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .deck {
+    animation: shuffle 2s ease-in-out;
+}
+
+input[type="checkbox"]:checked + .players .player .hand {
+    animation: deal 2s ease-in-out;
+}
+
+/* 
+@keyframes shuffle {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(300px);
+    }
+}
+*/
+
+@keyframes deal {
+    0% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.exit-button {
+    display: none;
+}
+
+.exit-label {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.exit-button:checked + .exit-label {
+    background-color: #f00; /* Change color when checked */
+}
