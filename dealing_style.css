@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: darkgreen;
+}
+
+.community {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -65px;
+    margin-left: -180px;
+    width: 360px;
+    height: 170px;
+    border: 3px solid black;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    justify-items: center;
+}
+
+.myDeck {
+    /*display: flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 120px 120px;
+    justify-items: center;
+    justify-content: center;
+/*    gap: 10px;*/
+    width: 30%;
+    grid-gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leftDeck, .rightDeck {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rightDeck {
+    right: 0;
+}
+
+.leftDeck {
+    left: 0;
+}
+
+.myCard, .leftCard, .rightCard, .communityCard {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    user-select: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.myCard, .communityCard {
+    animation: dealMyCards 1s cubic-bezier(0.14, 0.3, 0.47, 1.04) forwards;
+    width: 100px;
+    height: 150px;
+}
+
+.myCard {
+    animation: dealMyCards 1s cubic-bezier(0.14, 0.3, 0.47, 1.04) forwards;
+}
+
+.myCard:hover {
+    cursor: pointer;
+    border-color: red;
+}
+
+.communityCard {
+    margin-top: 10px;
+}
+
+.leftCard, .rightCard {
+    width: 150px;
+    height: 100px;
+    margin-bottom: -80px;
+}
+
+.leftCard {
+    animation: dealLeftCards 1s cubic-bezier(0.14, 0.3, 0.47, 1.04) forwards;
+}
+
+.leftCardText {
+    transform: rotate(90deg);
+}
+
+.rightCard{
+    animation: dealLRightCards 1s cubic-bezier(0.14, 0.3, 0.47, 1.04) forwards;
+}
+
+.rightCardText {
+    transform: rotate(-90deg);
+}
+
+.shuffle-button,
+.deal-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.shuffle-button:hover,
+.deal-button:hover {
+    background-color: #007bff;
+    color: #fff;
+  
+}
+
+@keyframes shuffle {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+@keyframes dealMyCards {
+    0% {
+        transform: translateY(-100vh) rotate(180deg);
+    }
+    100% {
+        transform:  translateY(0) rotate(0);
+    }
+}
+
+@keyframes dealLeftCards {
+    0% {
+        transform: translate(50vw, -100vh) rotate(-90deg);
+        margin-bottom: 10px;
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+        margin-bottom: -80px;
+    }
+}
+
+@keyframes dealLRightCards {
+    0% {
+        transform: translate(-50vw, -100vh) rotate(90deg);
+        margin-bottom: 10px;
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+        margin-bottom: -80px;
+    }
+}
