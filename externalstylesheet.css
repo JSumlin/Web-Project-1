@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #4B371C; 
+}
+.player-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 250px;
+}
+
+.player-info div {
+    text-align: center;
+}
+
+.player-info img {
+    max-width: 50px; 
+    max-height: 50px;
+}
+.name {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0px;
+}
+.card-table {
+    background-color: #006400; 
+    min-height: 500px;
+    width: 100%;
+	border: 2px solid #000;
+    border-radius: 20px;
+}
+#dealer{
+	position: fixed;
+    bottom: 0;
+}
+.dealer-player{
+	margin: 0 auto;
+}
+
+.dealer-player img {
+    max-width: 80px; 
+    max-height: 80px;
+}
