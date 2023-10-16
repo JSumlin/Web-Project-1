@@ -10,7 +10,6 @@ body {
     background-image: url(woodfloorbg.jpeg);
     background-size: cover;
 }
-
 .card {
     width: 80px;
     height: 120px;
@@ -35,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .player img {
@@ -89,7 +89,6 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-     
 }
 
 .dealer {
@@ -106,43 +105,61 @@ body {
     margin: 0;
 }
 
+
 .card {
     width: 2px;
+    transition: tranform 1s;
     margin-bottom: 10px;
 }
 
 .card:nth-last-child(1){
     width: 1px;
     animation: shuffle 1s linear;
-    animation-delay: 1s;
-    
 }
 .card:nth-last-child(2){
     width: 1px;
     animation: shuffle 1s linear;
-    animation-delay: 1.8s;
+    animation-delay: 1s;
 
 }
 .card:nth-last-child(3){
     width: 1px;
     animation: shuffle 1s linear;
-    animation-delay: 2.6s;
+    animation-delay: 1.8s;
 }
 .card:nth-last-child(4){
     width: 1px;
     animation: shuffle 1s linear;
-    animation-delay: 3.4s;
+    animation-delay: 2.6s;
 }
 
 .card:nth-last-child(5){
     width: 1px;
     animation: shuffle 1s linear;
+    animation-delay: 3.4s;
+}
+
+.card:nth-last-child(6){
+    width: 1px;
+    animation: shuffle 1s linear;
     animation-delay: 4.2s;
+}
+
+.card:nth-last-child(7){
+    width: 1px;
+    animation: shuffle 1s linear;
+    animation-delay: 5s;
+}
+
+.card:nth-last-child(8){
+    width: 1px;
+    animation: shuffle 1s linear;
+    animation-delay: 5.8s;
 }
 
 .button {
     position: fixed;
-    top: 40%;
+    top: 90%;
     left: 0%;
     right: 0%;
     width: auto;
@@ -153,7 +170,7 @@ body {
     align-items: center;
 }
 
-.Start {
+.shuffle-button, .deal-button, .quit-button {
     width: auto;
     height: auto;
     background-color: #ff4500;
@@ -165,11 +182,16 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-.shuffle-button:hover  {
-    background-color: #ff5d33;
 
+@keyframes shuffle {
+    0%, 100% {
+        transform: translateX(0);
+        
+    }
     
-}
-.deal-button:hover {
-    background-color: #ff5d33;
+    50% {
+        transform: translateX(10vh);
+        
+    }
+    
 }
