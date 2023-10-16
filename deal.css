@@ -79,11 +79,11 @@ body {
 
 .table {
     position: fixed;
-    top: 10%;
+    top: 12%;
     left: 5%;
     
     width: 90%;
-    height: 70%;
+    height: 68%;
     background-color: green;
     margin: auto;
     border: 1em solid black;
@@ -117,14 +117,14 @@ body {
 .card:nth-last-child(1){
     width: 1px;
     position: fixed;
-    top: 12.2%;
+    top: 15%;
     left: 10%;
     animation: deal-card1 1s linear;
 }
 .card:nth-last-child(2){
     width: 1px;
     position: fixed;
-    top: 12.2%;
+    top: 15%;
     left: 35%;
     animation: deal-card2 1s linear;
     
@@ -132,14 +132,14 @@ body {
 .card:nth-last-child(3){
     width: 1px;
     position: fixed;
-    top: 12.2%;
+    top: 15%;
     left: 60%;
     animation: deal-card3 1s linear;
 }
 .card:nth-last-child(4){
     width: 1px;
     position: fixed;
-    top: 12.2%;
+    top: 15%;
     left: 85%;
     animation: deal-card4 1s linear;
 
@@ -148,28 +148,28 @@ body {
 .card:nth-last-child(5){
     width: 1px;
     position: fixed;
-    top: 12.2%;
+    top: 15%;
     left: 11%;
     animation: deal-card5 1s linear;
 }
 .card:nth-last-child(6){
     width: 1px;
     position: fixed;
-    top: 12.2%;
+    top: 15%;
     left: 36%;
     animation: deal-card6 1s linear;
 }
 .card:nth-last-child(7){
     width: 1px;
     position: fixed;
-    top: 12.2%;
+    top: 15%;
     left: 61%;
     animation: deal-card7 1s linear;
 }
 .card:nth-last-child(8){
     width: 1px;
     position: fixed;
-    top: 12.2%;
+    top: 15%;
     left: 86%;
     animation: deal-card8 1s linear;
 }

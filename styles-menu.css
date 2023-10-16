@@ -4,6 +4,7 @@
     box-sizing: border-box;
     
 }
+
 body {
     height: 100vh;
     background-color: #4B371C;
@@ -77,11 +78,11 @@ body {
 
 .table {
     position: fixed;
-    top: 10%;
+    top: 12%;
     left: 5%;
     
     width: 90%;
-    height: 70%;
+    height: 68%;
     background-color: green;
     margin: auto;
     border: 1em solid black;
