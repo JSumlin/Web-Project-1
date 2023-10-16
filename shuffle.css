@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    height: 100vh;
+    background-color: #4B371C;
+    background-image: url(woodfloorbg.jpeg);
+    background-size: cover;
+}
+.card {
+    width: 80px;
+    height: 120px;
+    border-radius: 4px;
+}
+
+.card img {
+    width: 80px;
+    height: 120px;
+    border-radius: 4px;
+}
+
+.player {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.player img {
+    width: 100%;
+    margin: 0;
+    
+}
+
+.player-1, .player-2, .player-3, .player-4 {
+    width: 100px;
+    height: 10%;
+    border-radius: 4px;
+    margin: auto;
+    text-align: center;
+}
+
+.player-1{
+    position: fixed;
+    top: 0;
+    left: 10%;
+}
+
+.player-2{
+    position: fixed;
+    top: 0;
+    left: 35%;
+}
+
+.player-3{
+    position: fixed;
+    top: 0;
+    left: 60%;
+}
+
+.player-4{
+    position: fixed;
+    top: 0;
+    left: 85%;
+}
+
+.table {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    
+    width: 90%;
+    height: 70%;
+    background-color: green;
+    margin: auto;
+    border: 1em solid black;
+    border-radius: 1em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.dealer {
+    width: 100px;
+    height: 10%;
+    position: fixed;
+    left: 48%;
+    bottom: 10%;
+    text-align: center;
+}
+
+.dealer img {
+    width: 100%;
+    margin: 0;
+}
+
+
+.card {
+    width: 2px;
+    transition: tranform 1s;
+    margin-bottom: 10px;
+}
+
+.card:nth-last-child(1){
+    width: 1px;
+    animation: shuffle 1s linear;
+}
+.card:nth-last-child(2){
+    width: 1px;
+    animation: shuffle 1s linear;
+    animation-delay: 1s;
+
+}
+.card:nth-last-child(3){
+    width: 1px;
+    animation: shuffle 1s linear;
+    animation-delay: 1.8s;
+}
+.card:nth-last-child(4){
+    width: 1px;
+    animation: shuffle 1s linear;
+    animation-delay: 2.6s;
+}
+
+.card:nth-last-child(5){
+    width: 1px;
+    animation: shuffle 1s linear;
+    animation-delay: 3.4s;
+}
+
+.card:nth-last-child(6){
+    width: 1px;
+    animation: shuffle 1s linear;
+    animation-delay: 4.2s;
+}
+
+.card:nth-last-child(7){
+    width: 1px;
+    animation: shuffle 1s linear;
+    animation-delay: 5s;
+}
+
+.card:nth-last-child(8){
+    width: 1px;
+    animation: shuffle 1s linear;
+    animation-delay: 5.8s;
+}
+
+.button {
+    position: fixed;
+    top: 90%;
+    left: 0%;
+    right: 0%;
+    width: auto;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shuffle-button, .deal-button, .quit-button {
+    width: auto;
+    height: auto;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes shuffle {
+    0%, 100% {
+        transform: translateX(0);
+        
+    }
+    
+    50% {
+        transform: translateX(10vh);
+        
+    }
+    
+}
