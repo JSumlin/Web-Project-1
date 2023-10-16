@@ -86,8 +86,8 @@ body {
     height: 68%;
     background-color: green;
     margin: auto;
-    border: 1em solid black;
-    border-radius: 1em;
+	border: 2px solid #000;
+    border-radius: 20px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
