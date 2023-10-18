@@ -183,6 +183,11 @@ body {
     font-size: 1em;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.shuffle-button:hover, .deal-button:hover, .quit-button:hover {
+    background-color: rgba(255,69,0, 0.7);
 }
 
 @keyframes shuffle {

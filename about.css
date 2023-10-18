@@ -176,4 +176,9 @@ body {
     cursor: pointer;
     border: .2em solid black;
     border-radius: .2em;
+    transition: 0.2s;
+}
+
+.Back:hover {
+    background-color: rgba(255,69,0, 0.7);
 }
