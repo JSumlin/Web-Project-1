@@ -16,15 +16,23 @@ body {
     position: fixed;
     margin-top: 5px;
     margin-left: 5px;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
 }
 
 .description {
     position: fixed;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 5px;
     font-size: 20px;
+    color: white;
+}
+
+.team {
+    position: fixed;
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 30px;
     color: white;
 }
 
@@ -51,9 +59,11 @@ body {
     width: 100px;
     height: 10%;
     border-radius: 4px;
-    margin-top: 100px;
+    margin-top: 200px;
     text-align: center;
+    font-weight: bold;
     color: white;
+    white-space: pre-line;
 }
 
 .leader{
@@ -81,6 +91,60 @@ body {
 }
 
 .member-4{
+    position: fixed;
+    top: 0;
+    left: 80%;
+}
+
+.credits {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creditleader, .creditMem1, .creditMem2, .creditMem3, .creditMem4 {
+    width: 100px;
+    height: 10%;
+    border-radius: 4px;
+    margin-top: 350px;
+    text-align: center;
+    color: white;
+    white-space: pre-line;
+}
+
+.creditleader{
+    position: fixed;
+    top: 0;
+    left: 8%;
+}
+
+.creditMem1 {
+    position: fixed;
+    top: 0;
+    left: 26%;
+}
+
+.creditMem2 {
+    position: fixed;
+    top: 0;
+    left: 44%;
+}
+
+.creditMem3 {
+    position: fixed;
+    top: 0;
+    left: 62%;
+}
+
+.creditMem4 {
     position: fixed;
     top: 0;
     left: 80%;
